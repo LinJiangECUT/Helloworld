@@ -1,0 +1,3335 @@
+2022-07-23 06:55:23,651 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 06:55:23,654 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 06:55:25,031 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 06:55:25,444 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 06:55:25,667 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 42, in prepare_wsjmix
+    create_wsj_csv(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 136, in create_wsj_csv
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'yourpath/wsj0-mix/2speakers/wav8k/min/tr/mix/'
+2022-07-23 07:23:39,248 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 07:23:39,251 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 07:23:40,456 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 07:23:40,581 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 07:23:40,723 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+NotADirectoryError: [Errno 20] Not a directory: 'only2speaker.zip/train/mixture'
+2022-07-23 07:35:14,327 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 07:35:14,329 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 07:35:15,669 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 07:35:15,793 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 07:35:16,020 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+NotADirectoryError: [Errno 20] Not a directory: 'untitled.txt/train/mixture'
+2022-07-23 07:39:13,960 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 07:39:13,964 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 07:39:15,454 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 07:39:15,584 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 07:39:15,733 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'min/train/mixture'
+2022-07-23 07:42:31,652 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 07:42:31,655 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 07:42:33,260 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 07:42:33,439 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 07:42:33,620 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'min/cv/train/mixture'
+2022-07-23 07:54:27,592 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 07:54:27,595 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 07:54:30,569 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 07:54:30,688 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 07:54:30,834 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'min/train/mixture'
+2022-07-23 08:01:04,002 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 08:01:04,005 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 08:01:05,201 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 08:01:05,369 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 08:01:05,519 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'min save_folder save folder/train/mixture'
+2022-07-23 08:16:02,945 - speechbrain.core - INFO - Beginning experiment!
+2022-07-23 08:16:02,947 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-23 08:16:04,209 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-23 08:16:04,365 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-23 08:16:04,557 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+FileNotFoundError: [Errno 2] No such file or directory: 'yourpath/min/train/mixture'
+2022-07-27 05:59:00,886 - speechbrain.core - INFO - Beginning experiment!
+2022-07-27 05:59:00,887 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-27 05:59:01,457 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-27 05:59:01,475 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-27 05:59:01,791 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 606, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 365, in from_csv
+    data = load_data_csv(csv_path, replacements)
+  File "/speechbrain/speechbrain/dataio/dataio.py", line 127, in load_data_csv
+    with open(csv_path, newline="") as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/sepformer/1234/save/wsj_tr.csv'
+2022-07-27 05:59:38,307 - speechbrain.core - INFO - Beginning experiment!
+2022-07-27 05:59:38,308 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-27 05:59:38,861 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-27 05:59:38,881 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-27 05:59:38,959 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 543, in <module>
+    run_on_main(
+  File "/speechbrain/speechbrain/utils/distributed.py", line 61, in run_on_main
+    func(*args, **kwargs)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 52, in prepare_wsjmix
+    create_custom_dataset(datapath, savepath)
+  File "/speechbrain/recipes/WSJ0Mix/prepare_data.py", line 75, in create_custom_dataset
+    files = os.listdir(mix_path)
+NotADirectoryError: [Errno 20] Not a directory: 'only2speaker.zip/train/mixture'
+2022-07-27 05:59:48,005 - speechbrain.core - INFO - Beginning experiment!
+2022-07-27 05:59:48,005 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-07-27 05:59:48,551 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-07-27 05:59:48,570 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-07-27 05:59:48,906 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 606, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:24:38,454 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:24:38,455 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:24:39,441 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:24:39,465 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:24:39,670 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 607, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:28:13,147 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:28:13,148 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:28:13,594 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:28:13,618 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:28:13,825 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 607, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:29:45,564 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:29:45,565 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:29:46,015 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:29:46,039 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:29:46,248 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 608, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:31:57,209 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:31:57,210 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:31:57,675 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:31:57,698 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:31:57,896 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:33:17,697 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:33:17,697 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:33:18,142 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:33:18,167 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:33:18,374 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:36:37,272 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:36:37,272 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:36:37,719 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:36:37,743 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:36:37,953 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:37:48,010 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:37:48,011 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:37:48,467 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:37:48,491 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:37:48,700 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:38:38,104 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:38:38,104 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:38:38,552 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:38:38,574 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:38:38,784 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:39:44,699 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:39:44,699 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:39:45,153 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:39:45,177 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:39:45,386 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:40:13,495 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:40:13,496 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:40:13,952 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:40:13,975 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:40:14,185 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:40:41,922 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:40:41,922 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:40:42,374 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:40:42,398 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:40:42,607 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 611, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 450, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:42:48,311 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:42:48,311 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:42:48,888 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:42:48,913 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:42:49,121 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 612, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 452, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 366, in from_csv
+    return cls(data, dynamic_items, output_keys)
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 151, in __init__
+    static_keys = list(self.data[self.data_ids[0]].keys())
+IndexError: list index out of range
+2022-09-08 03:52:42,803 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:52:42,804 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:52:43,249 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:52:43,273 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:52:43,625 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 612, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+TypeError: cannot unpack non-iterable NoneType object
+2022-09-08 03:56:35,013 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:56:35,013 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:56:35,460 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:56:35,480 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:56:35,825 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 612, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+TypeError: cannot unpack non-iterable NoneType object
+2022-09-08 03:57:42,141 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:57:42,142 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:57:42,586 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:57:42,610 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:58:40,680 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 03:58:40,681 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 03:58:41,122 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 03:58:41,148 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 03:58:41,493 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 613, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+TypeError: cannot unpack non-iterable NoneType object
+2022-09-08 04:01:19,066 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 04:01:19,066 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 04:01:19,512 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 04:01:19,535 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 04:01:19,746 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 613, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 452, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 365, in from_csv
+    data = load_data_csv(csv_path, replacements)
+  File "/speechbrain/speechbrain/dataio/dataio.py", line 127, in load_data_csv
+    with open(csv_path, newline="") as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/sepformer/1234/save/wsj_tr.csv'
+2022-09-08 04:17:34,158 - speechbrain.core - INFO - Beginning experiment!
+2022-09-08 04:17:34,159 - speechbrain.core - INFO - Experiment folder: results/sepformer/1234
+2022-09-08 04:17:34,743 - speechbrain.utils.superpowers - DEBUG - appdirs==1.4.4
+attrs==21.4.0
+backcall==0.2.0
+black==19.10b0
+catboost==1.0.4
+certifi==2021.10.8
+cfgv==3.3.1
+charset-normalizer==2.0.12
+click==8.0.4
+cloudpickle==2.0.0
+ctc-segmentation==1.7.1
+cycler==0.11.0
+Cython==0.29.30
+debugpy==1.5.1
+decorator==5.1.1
+distlib==0.3.5
+entrypoints==0.3
+filelock==3.7.1
+flake8==3.7.9
+fonttools==4.31.1
+future==0.18.2
+graphviz==0.19.1
+grpcio==1.44.0
+h5py==3.6.0
+huggingface-hub==0.8.1
+HyperPyYAML==1.0.1
+identify==2.5.2
+idna==3.3
+ipykernel==6.9.2
+ipython==7.32.0
+jedi==0.18.1
+joblib==1.1.0
+jupyter-client==7.1.2
+jupyter-core==4.9.2
+kiwisolver==1.4.0
+lightgbm==3.3.2
+matplotlib==3.5.1
+matplotlib-inline==0.1.3
+mccabe==0.6.1
+mir-eval==0.7
+more-itertools==8.13.0
+nest-asyncio==1.5.4
+nodeenv==1.7.0
+numpy==1.22.3
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.1
+parso==0.8.3
+pathspec==0.9.0
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+platformdirs==2.5.2
+plotly==5.6.0
+pluggy==0.13.1
+pre-commit==2.20.0
+prompt-toolkit==3.0.28
+psutil==5.9.0
+ptyprocess==0.7.0
+py==1.11.0
+pycodestyle==2.5.0
+pyflakes==2.1.1
+Pygments==2.11.2
+pyparsing==3.0.7
+pytest==5.4.1
+python-dateutil==2.8.2
+pytz==2022.1
+PyYAML==6.0
+pyzmq==22.3.0
+regex==2022.7.9
+requests==2.27.1
+ruamel.yaml==0.17.21
+ruamel.yaml.clib==0.2.6
+scikit-learn==1.0.2
+scipy==1.8.0
+seaborn==0.11.2
+sentencepiece==0.1.96
+six==1.16.0
+sklearn==0.0
+speechbrain==0.5.12
+spyder-kernels==2.2.1
+tenacity==8.0.1
+threadpoolctl==3.1.0
+toml==0.10.2
+torch==1.11.0+cu113
+torchaudio==0.11.0+cu113
+torchvision==0.12.0+cu113
+tornado==6.1
+tqdm==4.64.0
+traitlets==5.1.1
+typed-ast==1.5.4
+typing_extensions==4.1.1
+urllib3==1.26.9
+virtualenv==20.15.1
+wcwidth==0.2.5
+wurlitzer==3.0.2
+xgboost==1.5.2
+yamllint==1.23.0
+
+
+2022-09-08 04:17:34,768 - speechbrain.utils.superpowers - DEBUG - c9d0f243
+
+
+2022-09-08 04:17:34,980 - speechbrain.core - ERROR - Exception:
+Traceback (most recent call last):
+  File "train.py", line 616, in <module>
+    train_data, valid_data, test_data = dataio_prep(hparams)
+  File "train.py", line 452, in dataio_prep
+    train_data = sb.dataio.dataset.DynamicItemDataset.from_csv(
+  File "/speechbrain/speechbrain/dataio/dataset.py", line 365, in from_csv
+    data = load_data_csv(csv_path, replacements)
+  File "/speechbrain/speechbrain/dataio/dataio.py", line 127, in load_data_csv
+    with open(csv_path, newline="") as csvfile:
+FileNotFoundError: [Errno 2] No such file or directory: 'results/sepformer/1234/save/wsj_tr.csv'
